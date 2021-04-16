@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+body { width: fit-content; }
+
+.navbar {
+  background-color: #fff !important;
+}
+
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+}
+.nav-item:hover{
+  border-bottom: 2px solid black !important;
+}
+
+.menu_active {
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+  
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+
+  .menu_active {
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+.card {
+  margin: 6%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 21.25%;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  float: left;
+  width: 100%;
+  height: auto;
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
+.card-text{
+  font-size: 12px;
+}
+/* ==========================================================================
+#Main Landing Section
+========================================================================== */
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+  text-align: right;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: black;
+  text-align: right;
+}
+
+#header .brand-name {
+  color: #3498db;
+}
+
+#header h2 {
+  color: #484848;
+  font-size: 24px;
+  text-align: right;
+}
+
+#header .btn-get-started {
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: #3498db;
+  border: 2px solid #3498db;
+  text-decoration: none;
+  text-align: right;
+  justify-self: right;
+}
+
+#header .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.header-img {
+  text-align: right;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.btn-see-all {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 40px;
+  transition: 0.5s;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+}
+.btn-see-all:hover {
+  background: black;
+  color: #fff;
+}
+.btn-abt {
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+}
+.btn-abt:hover {
+  background: black;
+  color: #fff;
+}
+.about_div{
+  background-color: #ffe6ff;
+}
+.abt_head{
+  font-weight: bold;
+  font-size: 50px;
+}
+.p1{
+  font-size: 18px;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ////////Contact ////////////
+ */
+
+.contact_div {
+  width: 100%;
+  height: 75vh;
+}
+
+/* /// footer///////////////////// */
+
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+/* responsive code */
+
+@media (max-width: 991px) {
+  #header {
+    height: 100vh;
+    text-align: right;
+  }
+  #header h1 {
+    font-size: 70px;
+  }
+  #header .header-img {
+    text-align: center;
+  }
+  #header .header-img img {
+    width: 60%;
+  }
+  .card-title{
+    font-size: 35px;
+  }
+}
+@media (max-width: 991px) {
+  .list_items{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  #header {
+    margin-top: 20px;
+  }
+  #header h1 {
+    font-size: 50px;
+  }
+  #header h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #header .header-img img {
+    width: 70%;
+  }
+  .card-title{
+    font-size: 35px;    
+  }
+}
+@media (max-width: 668px) {
+  #header {
+    margin-top: 20px;
+  }
+  #header h1 {
+    font-size: 40px;
+  }
+  #header h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #header .header-img img {
+    width: 70%;
+  }
+  .card-title{
+    font-size: 27px;    
+  }
+}
+@media (min-width: 992px) {
+  #header {
+    margin-top: 20px;
+  }
+  #header h1 {
+    font-size: 70px;
+  }
+  #header h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #header .header-img img {
+    width: 100%;
+  }
+  .card-title{
+    font-size: 20px;    
+  }
+}
+@media (min-width: 1300px) {
+  #header {
+    margin-top: 100px;
+  }
+  #header h1 {
+    font-size: 90px;
+  }
+  #header h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  #header .header-img img {
+    width: 100%;
+  }
+  .card-title{
+    font-size: 25px;    
+  } 
+}
+.flex-direction {
+  flex-direction: row;
+}
+@media screen and (max-width: 700px) {
+  .flex-direction {
+    flex-direction: column;
+  }
+  .one {
+    width: 350px;
+  }
+  .two {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .flex-direction {
+    flex-direction: column;
+  }
+  .one {
+    width: 250px;
+  }
+  .two {
+    width: 250px;
+  }
+}
+.footer_style{
+  background-color: white!important;
+  text-decoration: none;
+  text-align: right;
+  color: black;
+  padding: 20px;
+  margin-top: 10;
+}
+.links{
+  color: black;
+  text-decoration: none;
+  margin-top: auto;
+}
